@@ -1,0 +1,363 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.clear {
+  width: 100%;
+  height: 1px;
+  clear: both;
+}
+
+/* START of header-menu-container */
+#header-menu-container {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: #9f7000;
+  height: 120px;
+}
+
+#header-menu-container .header-menu {
+  background-color: #9f7000;
+  margin: 0 auto;
+  width: 1024px;
+  height: 30%;
+}
+
+#header-menu-container .header-menu .header-menu-left {
+  float: left;
+  width: 30%;
+}
+
+#header-menu-container .header-menu .header-menu-left img {
+  width: 25%;
+  margin: 5%;
+  background-color: #9f7000;
+  float: left;
+}
+
+#header-menu-container .header-menu .header-menu-left .logo-text {
+  color: #fff;
+  margin: 0;
+}
+
+#header-menu-container .header-menu .top{
+  padding-top: 11%;
+  font-size: 1.3em;
+}
+
+#header-menu-container .header-menu .header-menu-right {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+}
+
+#header-menu-container .header-menu .header-menu-right li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  float: right;
+  width: 18%;
+  vertical-align: middle;
+}
+
+#header-menu-container .header-menu .header-menu-right li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 50px 0;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s, transform .5s;
+}
+
+#header-menu-container .header-menu .header-menu-right li a:hover {
+  font-size: 1em;
+  transform: scale(1.5);
+  color: #fffc00;
+}
+
+/* END of header-menu-container */
+
+.content {
+  margin-top: 140px;
+}
+
+/* START of Pictures Slidshow */
+  .pictures-slideshow {
+    position: relative;
+  }
+
+  .pictures-slideshow>div:last-child {
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+    width: 50%;
+  }
+  /* Slideshow container */
+  .slideshow-container {
+    width: 960px;
+    max-width: 1000px;
+    position: relative;
+    margin: 1% auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .image-fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+/* END of Pictures Slidshow */
+
+/* START of Consul Message */
+.consul-message {
+    width: 750px;
+    margin: 3% auto;
+  }
+.message {
+    width: 65%;
+    float: left;
+    border-right: 1px solid;
+    padding-right: 3%;
+    color: #333;
+
+  }
+
+.consul-message img {
+    float: right;
+    width: 30%;
+    margin: 10% 0%;
+  }
+
+/* END of Consul Message */
+
+/* START of services-menu-container */
+.services-menu-container {
+  display: inline-grid;
+  margin: 5% auto;
+  padding: 0;
+  width: 100%;
+  min-height: 1px;
+  background-color: #aaa;
+  text-align: center;
+}
+
+
+.services-menu-container  h2 {
+  text-transform: capitalize;
+  font-size: 3em;
+  font-weight: 100;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#main-nav {
+    width: 960px;
+    padding: 2% 2% 10% 2%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#main-nav .nav-item {
+    padding: 20px;
+    width: 125px;
+    height: 125px;
+    list-style: none;
+    display: inline-block;
+    float: left;
+    background-color: #9f8dfa;
+    color: #eee;
+    letter-spacing: 2px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#main-nav .nav-item:hover {
+    background-color: #9f7000;
+}
+
+#main-nav .nav-item img {
+    width: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+#main-nav .nav-item span {
+    margin-top: 20px;
+    display: block;
+    font-size: 11px;
+}
+#main-nav .nav-item:hover {
+    text-decoration: none;
+
+}
+#main-nav .visa {
+    background-color: #80a3f2;
+}
+#main-nav .study {
+    background-color: #6880f9;
+}
+#main-nav .study span {
+    margin-top: 30px;
+}
+#main-nav .visit {
+    background-color: #69a1c1;
+}
+#main-nav .visit span {
+    margin-top: 30px;
+}
+
+/* END of services-menu-container */
+
+/*START of upcoming-event-container*/
+
+.upcoming-event-container {
+  margin: 0 0 5% 0;
+  padding: 0;
+  min-height: 100px;
+  background-color: #fff;
+}
+
+.upcoming-event {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 960px;
+  height: 30%;
+}
+
+.upcoming-event-container .upcoming-event h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.upcoming-event-container .upcoming-event p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+/*END of upcoming-event-container*/
+
+
+/* START of Contact */
+
+.contact {
+  width: 100%;
+  float: left;
+  margin-top: 5%;
+  padding: 5%;
+  background-color: #796a47;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 1%;
+}
+
+.contact p {
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.contact img {
+  width: 3%;
+  margin: 1%;
+}
+
+/* END of Contact */
+
+/* START of footer */
+
+.footer {
+  width: 100%;
+  padding: 1%;
+  margin: 0;
+  margin-top: -1px;
+  background-color: #9f7000;
+  color: #fff;
+  text-align: center;
+
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1em;
+}
+
+/* END of footer */
